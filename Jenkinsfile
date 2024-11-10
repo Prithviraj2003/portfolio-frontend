@@ -37,7 +37,7 @@ pipeline {
         stage('Deploy to Heroku') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'heroku-api-key', variable: 'HEROKU_API_KEY')]) {
+                    withCredentials([string(credentialsId: 'HEROKU_API_KEY', variable: 'HEROKU_API_KEY')]) {
                         sh '''
                             git init
                             git config user.email "rindulkar2003@gmail.com"
