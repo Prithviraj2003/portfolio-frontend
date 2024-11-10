@@ -3,15 +3,13 @@ pipeline {
 
     environment {
         CI = 'false'
-        HEROKU_APP_NAME = 'prithviraj-portfolio' // Replace with your Heroku app name
-        HEROKU_API_KEY = credentials('HEROKU_API_KEY') // Use the credential ID created in Jenkins
+        HEROKU_APP_NAME = 'prithviraj-portfolio'
+        HEROKU_API_KEY = credentials('HEROKU_API_KEY')
     }
 
     stages {
-        
         stage('Clone Repository') {
             steps {
-                // Clone the repository and specify the main branch
                 git branch: 'main', url: 'https://github.com/Prithviraj2003/portfolio-frontend.git'
             }
         }
@@ -20,7 +18,6 @@ pipeline {
             steps {
                 script {
                     if (fileExists('package.json')) {
-                        // Install frontend dependencies
                         sh 'npm install --force'
                     }
                 }
@@ -31,7 +28,6 @@ pipeline {
             steps {
                 script {
                     if (fileExists('package.json')) {
-                        // Run the build script
                         sh 'npm run build'
                     }
                 }
@@ -43,11 +39,10 @@ pipeline {
                 script {
                     withCredentials([string(credentialsId: 'HEROKU_API_KEY', variable: 'HEROKU_API_KEY')]) {
                         sh '''
-                        # Initialize a new git repository for the built files
                         git init
+                        git config user.email "rindulkar2003@gmail.com"
+                        git config user.name "prithviraj"
                         git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
-                        
-                        # Move to the build directory and push to Heroku
                         cd build
                         git add .
                         git commit -m "Deploy frontend build to Heroku"
