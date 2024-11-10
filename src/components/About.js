@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 
-export default function About({ color }) {
+export default function About({ color ,about}) {
   const profile = ProfileArray();
     return (
       <>
@@ -29,7 +29,7 @@ export default function About({ color }) {
               <Divider orientation="horizontal" />
             </Stack>
             <Text color={"gray.600"} fontSize={"xl"} px={4}>
-              {profile.about}
+              {about}
             </Text>
           </Stack>
         </Container>

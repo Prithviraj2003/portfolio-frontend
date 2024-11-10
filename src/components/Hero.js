@@ -9,10 +9,9 @@ import {
   useColorModeValue,
   createIcon,
 } from "@chakra-ui/react";
-import ProfileArray from "./ProfileArray";
+// import ProfileArray from "./ProfileArray";
 
-export default function Header({ color }) {
-  const profile = ProfileArray();
+export default function Header({ color,profile }) {
   const scrollToContact = () => {
     const contactSection = document.querySelector("#contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
@@ -46,16 +45,16 @@ export default function Header({ color }) {
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            {profile.headerName} <br />
+            Hi, my name is {profile.name} <br />
             <Text as={"span"} color={`${color}.400`}>
-              {profile.headerRole}
+            I'm a {profile.role}
             </Text>
           </Heading>
           <Text
             color={"gray.500"}
             fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
           >
-            {profile.headerDesc}
+            {profile.shortDesc}
           </Text>
           <Stack
             direction={"column"}
