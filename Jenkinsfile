@@ -20,7 +20,7 @@ pipeline {
                 script {
                     if (fileExists('package.json')) {
                         // Install frontend dependencies
-                        sh 'npm install'
+                        sh 'npm install --force'
                     }
                 }
             }
