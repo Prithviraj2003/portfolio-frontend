@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        CI = 'false'
         HEROKU_APP_NAME = 'prithviraj-portfolio' // Replace with your Heroku app name
         HEROKU_API_KEY = credentials('HEROKU_API_KEY') // Use the credential ID created in Jenkins
     }
