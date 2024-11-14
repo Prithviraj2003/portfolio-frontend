@@ -55,12 +55,12 @@ export default function Projects({ color, projects }) {
                       <HStack py={2}>
                         {project.liveLink && (
                           <a key={"link"} href={project.liveLink}>
-                            <Button color={`${color}.400`}>Live Demo</Button>
+                            <Button color={`${color}.400`}>Live Link</Button>
                           </a>
                         )}
                         {project.repoLink && (
                           <a key={"repo"} href={project.repoLink}>
-                            <Button color={`${color}.400`}>Repository</Button>
+                            <Button color={`${color}.400`}>Repository Link</Button>
                           </a>
                         )}
                       </HStack>
