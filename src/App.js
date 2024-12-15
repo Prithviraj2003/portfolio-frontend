@@ -29,7 +29,7 @@ function App() {
       description:
         "CollegeStoreHub is a unified online platform that enables students to easily browse and purchase products and services from various stores on the college campus. Whether it's food items or printing services, students can access a wide range of offerings in one place. Each store manages its listings and payments through their own gateways. Although direct order cancellations aren't available on the platform, students can contact stores for cancellations and refunds. Recently, the platform was upgraded with a microservice architecture using RabbitMQ to improve server resilience, ensuring smooth operations and secure handling of web push notifications. Only essential user information such as name, phone number, email ID, and password is stored, prioritizing user privacy and data security.",
       image:
-        "https://media.licdn.com/dms/image/v2/D5622AQFryUpXwmrMfg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1723194734674?e=1733961600&v=beta&t=BKrwN0AWf4L9q_ldcnf6f2pmbAi89ecweiMb3yWORow",
+        "https://utfs.io/f/6LJPG5hXPpsJKLu2ERSvsDNOrhj1YaIW8XzRHxCVuiAFJPQw",
       liveLink: "https://sgu.collegestorehub.com/",
       badges: ["React", "Node.js", "Express", "MongoDB", "RabbitMQ", "JWT"],
     },
@@ -39,7 +39,7 @@ function App() {
       description:
         "XypherShare is a peer-to-peer file-sharing platform designed with a focus on privacy, security, and ease of use. It enables users to share files directly without size limitations, ensuring data is kept private through end-to-end encryption. XypherShare aims to minimize its environmental impact by reducing server dependencies and supporting decentralized sharing methods. This project emphasizes a user-friendly experience, allowing seamless file transfers while prioritizing data integrity and user confidentiality.",
       image:
-        "https://media.licdn.com/dms/image/v2/D5622AQECdSufi7bXgw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1723195129780?e=1733961600&v=beta&t=8MTSTaXfo-nWBiKJsLim7Jpr3BcS8tj5750PHIYlCGo",
+        "https://utfs.io/f/6LJPG5hXPpsJHOwybOpVdiCh8kqSVcI3yMgm0osLvrw1pBl5",
       liveLink: "http://xyphershare.cloud/",
       repoLink: "https://github.com/Prithviraj2003/XypherShare-Frontend",
       badges: [
@@ -58,7 +58,7 @@ function App() {
       description:
         "pg-replicator is a versatile Docker image that simplifies PostgreSQL database replication by automating the replication process and supporting flexible configurations. It provides persistent data storage with Docker volumes and continuous monitoring for replication status.",
       image:
-        "https://media.licdn.com/dms/image/v2/D5622AQE60svO8GF1vQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1723195395652?e=1733961600&v=beta&t=ZqJx5yFlOYc8RevCYgcWOc7yRek-EXM-gvRt11h54Hs",
+        "https://utfs.io/f/6LJPG5hXPpsJ5fknUe8zq4VQthTJKs1dvIZc3RC2DOU6Yy5S",
       liveLink:
         "https://hub.docker.com/repository/docker/prithvirajindulkar/pg-replicator",
       repoLink: "https://github.com/Prithviraj2003/pg-replicator",
